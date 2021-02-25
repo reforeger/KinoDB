@@ -26,7 +26,7 @@ namespace KinoDM_DB
         {
             Height = 500;
             Width = 350;
-            BackColor = Color.Wheat;
+            BackColor = Color.FromArgb(174, 214, 211);
             connection.Open();
             Hall_adapter = new SqlDataAdapter("SELECT * FROM Halls", connection);
             DataTable halls_table = new DataTable();

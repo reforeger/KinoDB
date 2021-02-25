@@ -23,7 +23,9 @@ namespace KinoDM_DB
             Height = 350;
             Width = 800;
             Text = "Film select";
-            
+
+            BackColor = Color.FromArgb(174, 214, 211);
+
             connection.Open();
             Film_adapter = new SqlDataAdapter("SELECT * FROM Film", connection);
             DataTable film_table = new DataTable();
@@ -32,21 +34,24 @@ namespace KinoDM_DB
             btn1 = new Button();
             btn1.Size = new Size(200, 200);
             btn1.Location = new Point(30, 50);
-            //btn1.BackgroundImage = Image.FromFile("../../imgage/soul.jpg");
+            btn1.BackgroundImage = Image.FromFile("../../imgage/soul.jpg");
+            btn1.BackgroundImageLayout = ImageLayout.Stretch;
             btn1.Click += Btn1_Click;
             Controls.Add(btn1);
 
             btn2 = new Button();
             btn2.Size = new Size(200, 200);
             btn2.Location = new Point(290, 50);
-            //btn2.BackgroundImage = Image.FromFile("");
+            btn2.BackgroundImage = Image.FromFile("../../imgage/soul.jpg");
+            btn2.BackgroundImageLayout = ImageLayout.Stretch;
             btn2.Click += Btn2_Click;
             Controls.Add(btn2);
 
             btn3 = new Button();
             btn3.Size = new Size(200, 200);
             btn3.Location = new Point(550, 50);
-            //btn3.BackgroundImage = Image.FromFile("");
+            btn3.BackgroundImage = Image.FromFile("../../imgage/soul.jpg");
+            btn3.BackgroundImageLayout = ImageLayout.Stretch;
             btn3.Click += Btn3_Click;
             Controls.Add(btn3);
 

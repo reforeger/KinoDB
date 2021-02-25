@@ -18,10 +18,11 @@ namespace KinoDM_DB
         Button btnB;
         public Kino(int i_, int j_)
         {
+            BackColor = Color.FromArgb(174, 214, 211);
+
             _arr = new Label[i_, j_];
             Size = new Size(i_ * 60 + 80, j_ * 55 + 80);
             Text = "Hall";
-            BackColor = Color.Wheat;
             for (i = 0; i < i_; i++)
             {
                 for (j = 0; j < j_; j++)

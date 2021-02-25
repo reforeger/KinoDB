@@ -122,9 +122,12 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="AppData\DataKino.mdf" />
+    <Content Include="AppData\DataKino.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="AppData\DataKino_log.ldf">
       <DependentUpon>DataKino.mdf</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="imgage\soul.jpg" />
   </ItemGroup>

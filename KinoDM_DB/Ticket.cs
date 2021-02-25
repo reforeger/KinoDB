@@ -21,7 +21,7 @@ namespace KinoDM_DB
             Height = 140;
             Width = 300;
             Text = "Purchase";
-            BackColor = Color.Wheat;
+            BackColor = Color.FromArgb(174, 214, 211);
 
             lblM = new Label();
             lblM.Text = "Mail:";
