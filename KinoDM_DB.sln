@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30413.136
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KinoDM_DB", "KinoDM_DB\KinoDM_DB.csproj", "{18ED446C-2983-4B8F-B1C9-D190BED5693C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{18ED446C-2983-4B8F-B1C9-D190BED5693C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{18ED446C-2983-4B8F-B1C9-D190BED5693C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{18ED446C-2983-4B8F-B1C9-D190BED5693C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{18ED446C-2983-4B8F-B1C9-D190BED5693C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {81EB6F11-BDF3-4E8F-A3E4-AB4D8E5D7728}
+	EndGlobalSection
+EndGlobal
