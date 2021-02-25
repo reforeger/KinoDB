@@ -25,45 +25,45 @@ namespace KinoDM_DB
             Text = "Film select";
             
             connection.Open();
-            Film_adapter = new SqlDataAdapter("SELECT Genre FROM Film", connection);
+            Film_adapter = new SqlDataAdapter("SELECT * FROM Film", connection);
             DataTable film_table = new DataTable();
             Film_adapter.Fill(film_table);
 
             btn1 = new Button();
             btn1.Size = new Size(200, 200);
             btn1.Location = new Point(30, 50);
-            btn1.BackgroundImage = Image.FromFile("");
+            //btn1.BackgroundImage = Image.FromFile("../../imgage/soul.jpg");
             btn1.Click += Btn1_Click;
             Controls.Add(btn1);
 
             btn2 = new Button();
             btn2.Size = new Size(200, 200);
             btn2.Location = new Point(290, 50);
-            btn2.BackgroundImage = Image.FromFile("");
+            //btn2.BackgroundImage = Image.FromFile("");
             btn2.Click += Btn2_Click;
             Controls.Add(btn2);
 
             btn3 = new Button();
             btn3.Size = new Size(200, 200);
             btn3.Location = new Point(550, 50);
-            btn3.BackgroundImage = Image.FromFile("");
+            //btn3.BackgroundImage = Image.FromFile("");
             btn3.Click += Btn3_Click;
             Controls.Add(btn3);
 
             lbl1 = new Label();
-            lbl1.Text = "Terminator";
+            lbl1.Text = "Avatar";
             lbl1.Size = new Size(70, 20);
             lbl1.Location = new Point(100, 270);
             Controls.Add(lbl1);
 
             lbl2 = new Label();
-            lbl2.Text = "Fast and Furious";
+            lbl2.Text = "Soul";
             lbl2.Size = new Size(90, 20);
             lbl2.Location = new Point(350, 270);
             Controls.Add(lbl2);
 
             lbl3 = new Label();
-            lbl3.Text = "Transformers";
+            lbl3.Text = "Djumadji";
             lbl3.Size = new Size(70, 20);
             lbl3.Location = new Point(620, 270);
             Controls.Add(lbl3);
@@ -81,27 +81,28 @@ namespace KinoDM_DB
             Controls.Add(cBox);
         }
 
-        private void Btn3_Click(object sender, EventArgs e)
-        {
-            Form1 Kino = new Form1();
-            Kino.Show();
-            Kino.Text = "Transformers";
-            Hide();
-        }
 
-        private void Btn2_Click(object sender, EventArgs e)
-        {
-            Form1 Kino = new Form1();
-            Kino.Show();
-            Kino.Text = "Fast and Furious";
-            Hide();
-        }
 
         private void Btn1_Click(object sender, EventArgs e)
         {
             Form1 Kino = new Form1();
             Kino.Show();
-            Kino.Text = "Terminator";
+            Kino.Text = "Avatar";
+            Hide();
+        }
+        private void Btn2_Click(object sender, EventArgs e)
+        {
+            Form1 Kino = new Form1();
+            Kino.Show();
+            Kino.Text = "Soul";
+            Hide();
+        }
+
+        private void Btn3_Click(object sender, EventArgs e)
+        {
+            Form1 Kino = new Form1();
+            Kino.Show();
+            Kino.Text = "Djumadji";
             Hide();
         }
     }

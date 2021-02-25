@@ -56,9 +56,6 @@ namespace KinoDM_DB
                 a = a + 1;
             }
             connection.Close();
-            //cBox.Items.Add("Small");
-            //cBox.Items.Add("Medium");
-            //cBox.Items.Add("Large");
             cBox.DropDownStyle = ComboBoxStyle.DropDownList;
             cBox.SelectedIndex = 0;
             Controls.Add(cBox);
