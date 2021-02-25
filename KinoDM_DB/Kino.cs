@@ -16,6 +16,7 @@ namespace KinoDM_DB
         int i, j;
         Label[,] _arr;
         Button btnB;
+        Random Rand;
         public Kino(int i_, int j_)
         {
             BackColor = Color.FromArgb(174, 214, 211);
@@ -28,7 +29,7 @@ namespace KinoDM_DB
                 for (j = 0; j < j_; j++)
                 {
                     _arr[i, j] = new Label();
-                    _arr[i, j].BackColor = Color.DarkGreen;
+                    _arr[i, j].BackColor = Color.DarkSeaGreen;
                     _arr[i, j].Text = "Place " + (j + 1);
                     _arr[i, j].TextAlign = ContentAlignment.MiddleCenter;
                     _arr[i, j].Size = new Size(55, 55);
@@ -63,7 +64,7 @@ namespace KinoDM_DB
             if (_arr[tag[0], tag[1]].Text != "Selected" && _arr[tag[0], tag[1]].Text != "Booked")
             {
                 _arr[tag[0], tag[1]].Text = "Selected";
-                _arr[tag[0], tag[1]].BackColor = Color.DarkOrange;
+                _arr[tag[0], tag[1]].BackColor = Color.LightGoldenrodYellow;
             }
             else if (_arr[tag[0], tag[1]].Text == "Selected")
             {
