@@ -35,7 +35,7 @@ namespace KinoDM_DB
             btn1 = new Button();
             btn1.Size = new Size(200, 200);
             btn1.Location = new Point(30, 50);
-            btn1.BackgroundImage = Image.FromFile("../../imgage/soul.jpg");
+            btn1.BackgroundImage = Image.FromFile("../../imgage/avatar.jpg");
             btn1.BackgroundImageLayout = ImageLayout.Stretch;
             btn1.Click += Btn1_Click;
             Controls.Add(btn1);
@@ -51,7 +51,7 @@ namespace KinoDM_DB
             btn3 = new Button();
             btn3.Size = new Size(200, 200);
             btn3.Location = new Point(550, 50);
-            btn3.BackgroundImage = Image.FromFile("../../imgage/soul.jpg");
+            btn3.BackgroundImage = Image.FromFile("../../imgage/dju.jpg");
             btn3.BackgroundImageLayout = ImageLayout.Stretch;
             btn3.Click += Btn3_Click;
             Controls.Add(btn3);
@@ -59,7 +59,7 @@ namespace KinoDM_DB
             btn4 = new Button();
             btn4.Size = new Size(200, 200);
             btn4.Location = new Point(810, 50);
-            btn4.BackgroundImage = Image.FromFile("../../imgage/soul.jpg");
+            btn4.BackgroundImage = Image.FromFile("../../imgage/alita.jpg");
             btn4.BackgroundImageLayout = ImageLayout.Stretch;
             btn4.Click += Btn4_Click;
             Controls.Add(btn4);
@@ -67,7 +67,7 @@ namespace KinoDM_DB
             btn5 = new Button();
             btn5.Size = new Size(200, 200);
             btn5.Location = new Point(30, 300);
-            btn5.BackgroundImage = Image.FromFile("../../imgage/soul.jpg");
+            btn5.BackgroundImage = Image.FromFile("../../imgage/res.jpg");
             btn5.BackgroundImageLayout = ImageLayout.Stretch;
             btn5.Click += Btn5_Click;
             Controls.Add(btn5);
@@ -75,7 +75,7 @@ namespace KinoDM_DB
             btn6 = new Button();
             btn6.Size = new Size(200, 200);
             btn6.Location = new Point(290, 300);
-            btn6.BackgroundImage = Image.FromFile("../../imgage/soul.jpg");
+            btn6.BackgroundImage = Image.FromFile("../../imgage/baby.jpg");
             btn6.BackgroundImageLayout = ImageLayout.Stretch;
             btn6.Click += Btn6_Click;
             Controls.Add(btn6);
@@ -83,7 +83,7 @@ namespace KinoDM_DB
             btn7 = new Button();
             btn7.Size = new Size(200, 200);
             btn7.Location = new Point(550, 300);
-            btn7.BackgroundImage = Image.FromFile("../../imgage/soul.jpg");
+            btn7.BackgroundImage = Image.FromFile("../../imgage/spider.jpg");
             btn7.BackgroundImageLayout = ImageLayout.Stretch;
             btn7.Click += Btn7_Click;
             Controls.Add(btn7);
@@ -91,7 +91,7 @@ namespace KinoDM_DB
             btn8 = new Button();
             btn8.Size = new Size(200, 200);
             btn8.Location = new Point(810, 300);
-            btn8.BackgroundImage = Image.FromFile("../../imgage/soul.jpg");
+            btn8.BackgroundImage = Image.FromFile("../../imgage/jur1.jpg");
             btn8.BackgroundImageLayout = ImageLayout.Stretch;
             btn8.Click += Btn8_Click;
             Controls.Add(btn8);
@@ -116,9 +116,9 @@ namespace KinoDM_DB
             Controls.Add(lbl3);
 
             lbl4 = new Label();
-            lbl4.Text = "Alita";
-            lbl4.Size = new Size(70, 20);
-            lbl4.Location = new Point(890, 270);
+            lbl4.Text = "Alita: Battle Angel";
+            lbl4.Size = new Size(130, 20);
+            lbl4.Location = new Point(870, 270);
             Controls.Add(lbl4);
 
             lbl5 = new Label();
@@ -128,19 +128,19 @@ namespace KinoDM_DB
             Controls.Add(lbl5);
 
             lbl6 = new Label();
-            lbl6.Text = "Soul";
+            lbl6.Text = "Baby driver";
             lbl6.Size = new Size(70, 20);
             lbl6.Location = new Point(370, 520);
             Controls.Add(lbl6);
 
             lbl7 = new Label();
-            lbl7.Text = "Avatar";
+            lbl7.Text = "Spider man";
             lbl7.Size = new Size(70, 20);
             lbl7.Location = new Point(620, 520);
             Controls.Add(lbl7);
 
             lbl8 = new Label();
-            lbl8.Text = "Soul";
+            lbl8.Text = "jurassic world";
             lbl8.Size = new Size(90, 20);
             lbl8.Location = new Point(890, 520);
             Controls.Add(lbl8);
@@ -187,7 +187,7 @@ namespace KinoDM_DB
         {
             Form1 Kino = new Form1();
             Kino.Show();
-            Kino.Text = "Djumadji";
+            Kino.Text = "Alita: Battle Angel";
             Hide();
         }
 
@@ -195,7 +195,7 @@ namespace KinoDM_DB
         {
             Form1 Kino = new Form1();
             Kino.Show();
-            Kino.Text = "Djumadji";
+            Kino.Text = "Resident Evil";
             Hide();
         }
 
@@ -203,7 +203,7 @@ namespace KinoDM_DB
         {
             Form1 Kino = new Form1();
             Kino.Show();
-            Kino.Text = "Djumadji";
+            Kino.Text = "Baby driver";
             Hide();
         }
 
@@ -211,7 +211,7 @@ namespace KinoDM_DB
         {
             Form1 Kino = new Form1();
             Kino.Show(); 
-            Kino.Text = "Djumadji";
+            Kino.Text = "Spider man";
             Hide();
         }
 
@@ -219,7 +219,7 @@ namespace KinoDM_DB
         {
             Form1 Kino = new Form1();
             Kino.Show();
-            Kino.Text = "Djumadji";
+            Kino.Text = "jurassic world";
             Hide();
         }
     }

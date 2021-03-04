@@ -112,7 +112,7 @@
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
       <Visible>False</Visible>
-      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 и x64%29</ProductName>
       <Install>true</Install>
     </BootstrapperPackage>
     <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
@@ -126,10 +126,17 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="AppData\DataKino_log.ldf">
-      <DependentUpon>DataKino.mdf</DependentUpon>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>DataKino.mdf</DependentUpon>
     </Content>
+    <Content Include="imgage\alita.jpg" />
+    <Content Include="imgage\avatar.jpg" />
+    <Content Include="imgage\baby.jpg" />
+    <Content Include="imgage\dju.jpg" />
+    <Content Include="imgage\jur1.jpg" />
+    <Content Include="imgage\res.jpg" />
     <Content Include="imgage\soul.jpg" />
+    <Content Include="imgage\spider.jpg" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
