@@ -16,7 +16,10 @@ namespace KinoDM_DB
         int i, j;
         Label[,] _arr;
         Button btnB;
-        Random Rand;
+        SqlCommand cmd;
+        SqlConnection connection = new SqlConnection(@"Data Source = (LocalDB)\MSSQLLocalDB; AttachDbFilename =|DataDirectory|\AppData\DataKino.mdf; Integrated Security = True");
+        string filmI;
+        string hallI;
         public Kino(int i_, int j_)
         {
             BackColor = Color.FromArgb(174, 214, 211);
@@ -70,11 +73,16 @@ namespace KinoDM_DB
             {
                 if (MessageBox.Show("Are you sure you want to book this place?", "Booking", MessageBoxButtons.YesNo) == DialogResult.Yes)
                 {
-                    Ticket ticket = new Ticket();
-                    ticket.Show();
-                    //_arr[tag[0], tag[1]].Text = "Booked";
-                    //_arr[tag[0], tag[1]].BackColor = Color.DarkRed;
-                    //MessageBox.Show("Row: " + (tag[0] + 1) + ", place: " + (tag[1] + 1) + " - successfully booked!");
+                    connection.Open();
+                    cmd = new SqlCommand("INSERT INTO Ticket(FilmId, HallId, Row, Place) VALUES(@film, @hall, @row, @place)", connection);
+                    cmd.Parameters.AddWithValue("@film", filmI);
+                    cmd.Parameters.AddWithValue("@hall", hallI);
+                    cmd.Parameters.AddWithValue("@row", (tag[0] + 1));
+                    cmd.Parameters.AddWithValue("@place", (tag[1] + 1));
+                    connection.Close();
+                    _arr[tag[0], tag[1]].Text = "Booked";
+                    _arr[tag[0], tag[1]].BackColor = Color.DarkRed;
+                    MessageBox.Show("Row: " + (tag[0] + 1) + ", place: " + (tag[1] + 1) + " - successfully booked!");
                 }
                 else
                 {
